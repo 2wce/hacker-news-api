@@ -6,7 +6,7 @@
     "email": "kudamupeni@icloud.com"
   },
   "scripts": {
-    "dev": "ts-node-dev --no-notify --respawn --transpileOnly src",
+    "dev": "ts-node-dev --no-notify --respawn --transpileOnly api",
     "test": "jest"
   },
   "dependencies": {
@@ -14,7 +14,6 @@
     "apollo-server": "^2.21.0",
     "axios": "^0.21.1",
     "graphql": "15.5.0",
-    "graphql-import-node": "0.0.4",
     "graphql-shield": "^7.5.0",
     "graphql-tools": "7.0.4",
     "graphql-yoga": "1.18.3",
