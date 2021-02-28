@@ -11,18 +11,4 @@ export default {
       })
     },
   },
-  Mutation: {
-    signupUser: (parent, args, ctx: Context) => {
-      return ctx.prisma.user.create(args)
-    },
-  },
-  User: {
-    posts: (parent, args, ctx: Context) => {
-      return ctx.prisma.user
-        .findUnique({
-          where: { id: parent.id },
-        })
-        .posts()
-    },
-  },
 }
