@@ -1,6 +1,5 @@
 import { gql } from "apollo-server-micro";
 import axios from "axios";
-import resolvers from "./resolvers";
 
 const getStory = async (storyId) => {
   const result = await axios.get(`${storyUrl + storyId}.json`);
